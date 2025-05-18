@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState, useRef } from 'react';
-import { Casino, Cards, Gamepad, Dice1, Video } from 'lucide-react';
+import { PokerChip, Gamepad, Dice1, Video, Card } from 'lucide-react';
 
 const gameTypes = [
   {
@@ -12,13 +12,13 @@ const gameTypes = [
   {
     id: 2,
     name: 'Blackjack',
-    icon: <Cards className="w-8 h-8" />,
+    icon: <Card className="w-8 h-8" />,
     description: 'Strategic card game against the dealer',
   },
   {
     id: 3,
     name: 'Roulette',
-    icon: <Casino className="w-8 h-8" />,
+    icon: <PokerChip className="w-8 h-8" />,
     description: 'Bet on where the ball will land',
   },
   {
@@ -30,7 +30,7 @@ const gameTypes = [
   {
     id: 5,
     name: 'Poker',
-    icon: <Cards className="w-8 h-8" />,
+    icon: <Card className="w-8 h-8" />,
     description: 'Texas Hold\'em and more variations',
   },
   {
