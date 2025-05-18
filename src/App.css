@@ -65,3 +65,51 @@
   width: 100%;
 }
 
+/* Updated Modern Styles */
+
+.cta-button {
+  @apply inline-flex items-center justify-center gap-2 bg-gradient-to-r from-casino-red to-pink-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-xl hover:from-red-700 hover:to-pink-700 transform hover:scale-[1.02];
+}
+
+.badge-new {
+  @apply absolute -top-2 -right-2 bg-gradient-to-r from-casino-gold to-yellow-500 text-white text-xs font-bold py-1 px-3 rounded-full shadow-md z-10;
+  animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-bold mb-10 text-center text-casino-dark relative pb-4;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  border-radius: 9999px;
+}
+
+/* Enhanced card styles */
+.casino-card {
+  @apply transition-all duration-300;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.casino-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+

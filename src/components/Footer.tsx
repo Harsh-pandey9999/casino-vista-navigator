@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white py-16 px-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
             <div className="mb-6">
               <a href="#" className="text-2xl font-bold">
@@ -83,54 +83,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-6">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-400 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <a href="mailto:info@cashinopartners.com" className="text-slate-400 hover:text-white transition-colors duration-200">
-                  info@cashinopartners.com
-                </a>
-              </li>
-              <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-400 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                </svg>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
-                  Support Center
-                </a>
-              </li>
-              <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-400 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
-                </svg>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
-                  Live Chat
-                </a>
-              </li>
-            </ul>
-            
-            <div className="mt-6 bg-slate-800 rounded-lg p-4">
-              <h4 className="text-sm font-bold mb-2">Subscribe to our newsletter</h4>
-              <form className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="bg-slate-700 text-white text-sm rounded-lg px-3 py-2 w-full focus:ring-casino-primary focus:border-casino-primary border-0"
-                />
-                <button 
-                  type="submit"
-                  className="bg-casino-primary hover:bg-casino-secondary text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors duration-300"
-                >
-                  Join
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
         
         <hr className="border-slate-700 my-8" />
@@ -141,10 +93,10 @@ const Footer = () => {
           </p>
           
           <div className="flex items-center mt-4 md:mt-0">
-            <img src="https://via.placeholder.com/40x20?text=18+" alt="18+" className="mr-2" />
-            <img src="https://via.placeholder.com/40x20?text=GRA" alt="Gambling Authority" className="mr-2" />
-            <img src="https://via.placeholder.com/40x20?text=SSL" alt="SSL Secure" className="mr-2" />
-            <img src="https://via.placeholder.com/40x20?text=Safe" alt="Safe Gambling" />
+            <img src="https://images.unsplash.com/photo-1636045438767-0d8087765e54?w=40&h=20&fit=crop&auto=format" alt="18+" className="mr-2 rounded" />
+            <img src="https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=40&h=20&fit=crop&auto=format" alt="Gambling Authority" className="mr-2 rounded" />
+            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=40&h=20&fit=crop&auto=format" alt="SSL Secure" className="mr-2 rounded" />
+            <img src="https://images.unsplash.com/photo-1639322534667-9ba5121313fc?w=40&h=20&fit=crop&auto=format" alt="Safe Gambling" className="rounded" />
           </div>
         </div>
       </div>

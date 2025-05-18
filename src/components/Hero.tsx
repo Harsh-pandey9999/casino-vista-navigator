@@ -16,10 +16,10 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1606167668584-78701c57f13d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-casino-primary/80 to-casino-accent/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-casino-primary/80 to-purple-600/80 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTMwIDMwbDMwLTMwSDMweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPgogIDxwYXRoIGQ9Ik0zMCAzMEwwIDYwaDMweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPgogIDxwYXRoIGQ9Ik0zMCAzMGwzMCAzMFYzMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz4KICA8cGF0aCBkPSJNMzAgMzBMMCA2MFYweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPgo8L3N2Zz4=')]"></div>
       </div>
 
@@ -42,7 +42,7 @@ const Hero = () => {
             
             <button 
               onClick={scrollToHowItWorks}
-              className="secondary-button bg-white/20 border-white text-white hover:bg-white/30 w-full sm:w-auto"
+              className="bg-white/20 hover:bg-white/30 text-white font-semibold border-2 border-white/30 px-6 py-3 rounded-lg transition-all duration-300 flex items-center gap-2 w-full sm:w-auto"
             >
               Learn How It Works
             </button>

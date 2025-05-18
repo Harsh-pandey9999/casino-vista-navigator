@@ -5,7 +5,7 @@ const newCasinos = [
   {
     id: 1,
     name: "Vegas Paradise",
-    logo: "https://images.unsplash.com/photo-1563202284-51031dcc9714?w=200&h=100&fit=crop&auto=format",
+    logo: "https://images.unsplash.com/photo-1601370552761-9852e3b6f7cb?w=200&h=100&fit=crop&auto=format",
     description: "Launched this month with 200+ games and a sleek mobile app. Get a 150% match bonus.",
     rating: 4.7,
     launchedDays: 5,
@@ -13,7 +13,7 @@ const newCasinos = [
   {
     id: 2,
     name: "Fortune Wheel",
-    logo: "https://images.unsplash.com/photo-1605979257913-1704eb7b6246?w=200&h=100&fit=crop&auto=format",
+    logo: "https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=200&h=100&fit=crop&auto=format",
     description: "Brand new casino featuring exclusive games and weekly tournaments with cash prizes.",
     rating: 4.5,
     launchedDays: 12,
@@ -21,7 +21,7 @@ const newCasinos = [
   {
     id: 3,
     name: "Elite Spins",
-    logo: "https://images.unsplash.com/photo-1605979399824-ea4b795a735a?w=200&h=100&fit=crop&auto=format",
+    logo: "https://images.unsplash.com/photo-1624954784400-d181eb441e47?w=200&h=100&fit=crop&auto=format",
     description: "A premium gaming experience with VIP service from day one and instant withdrawals.",
     rating: 4.8,
     launchedDays: 7,
@@ -78,7 +78,7 @@ const NewestCasinos = () => {
   };
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 px-4 bg-white">
+    <section ref={sectionRef} className="py-16 md:py-24 px-4 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto">
         <h2 className="section-heading">Newest Casinos Added</h2>
         
@@ -86,23 +86,23 @@ const NewestCasinos = () => {
           {newCasinos.map((casino, index) => (
             <div 
               key={casino.id} 
-              className="casino-card bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 relative"
+              className="casino-card bg-white rounded-xl shadow-xl overflow-hidden border border-slate-100 relative hover:translate-y-[-8px] transition-all duration-300"
               style={{ animationDelay: `${0.2 * index}s` }}
             >
               <div className="badge-new">NEW</div>
               
-              <div className="h-32 bg-slate-100 flex items-center justify-center p-4 overflow-hidden">
+              <div className="h-32 bg-gradient-to-br from-purple-900 to-blue-900 flex items-center justify-center p-4 overflow-hidden">
                 <img 
                   src={casino.logo} 
                   alt={`${casino.name} logo`}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain mix-blend-lighten"
                 />
               </div>
               
-              <div className="p-5">
+              <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-xl font-bold text-slate-800">{casino.name}</h3>
-                  <span className="text-xs font-medium bg-slate-100 text-slate-600 py-1 px-2 rounded-full">
+                  <span className="text-xs font-medium bg-casino-accent/10 text-casino-accent py-1 px-2 rounded-full">
                     {casino.launchedDays}d ago
                   </span>
                 </div>
@@ -114,7 +114,7 @@ const NewestCasinos = () => {
                 
                 <p className="text-sm text-slate-600 mb-4">{casino.description}</p>
                 
-                <a href="#" className="block w-full bg-casino-primary hover:bg-casino-secondary text-white font-medium text-center py-2.5 rounded-lg transition-colors duration-300">
+                <a href="#" className="block w-full bg-gradient-to-r from-casino-accent to-purple-500 hover:from-casino-accent/90 hover:to-purple-600 text-white font-medium text-center py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
                   Visit Casino
                 </a>
               </div>
